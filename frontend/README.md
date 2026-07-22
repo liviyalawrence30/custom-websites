@@ -1,20 +1,35 @@
-# 💻 Custom Websites - Frontend Client Application
+# Custom Websites
 
-The user-facing web application for Custom Websites, built with React 19, TypeScript, and Vite.
+A full-stack web application that enables businesses to showcase custom website solutions. Users can explore website templates, submit website requests, and book discovery calls through an intuitive and responsive interface.
 
-## 🚀 Getting Started
+## Features
 
-### Install Dependencies
-```bash
-npm install
-```
+- Responsive user interface
+- Portfolio of custom website demos
+- Website request submission
+- Discovery call booking
+- Admin dashboard
+- Email notifications
+- PostgreSQL database integration
 
-### Start Development Server
-```bash
-npm run dev
-```
+## Tech Stack
 
-### Production Build
-```bash
-npm run build
-```
+### Frontend
+- React
+- TypeScript
+- Vite
+- React Router
+- Axios
+- CSS
+
+### Backend
+- Node.js
+- Express.js
+- TypeScript
+
+### Database
+- PostgreSQL
+
+### Other Tools
+- Docker Compose
+- Git & GitHub
