@@ -1,42 +1,35 @@
-# Custom Websites Platform
+# Custom Websites
 
-A full-stack web agency platform built with React, Node.js, Express, and PostgreSQL.
+A full-stack web application that enables businesses to showcase custom website solutions. Users can explore website templates, submit website requests, and book discovery calls through an intuitive and responsive interface.
 
-## 🚀 Features
+## Features
 
-- **Client Planning**: Custom website request form with dynamic pricing estimates.
-- **Consultation Booking**: Calendar booking system with automated email confirmations.
-- **Admin Dashboard**: Manage website requests, bookings, and calendar slots.
-- **Portfolio Showcase Sites**:
-  - Gourmet Bistro & Dining
-  - Horizon Luxury Properties
-  - CloudFlow SaaS Platform
-  - Aura Boutique & Apparel
+- Responsive user interface
+- Portfolio of custom website demos
+- Website request submission
+- Discovery call booking
+- Admin dashboard
+- Email notifications
+- PostgreSQL database integration
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **Frontend**: React 19, TypeScript, Vite, CSS
-- **Backend**: Node.js, Express, TypeScript
-- **Database**: PostgreSQL 16 via Docker
-- **Email**: Gmail SMTP
+### Frontend
+- React
+- TypeScript
+- Vite
+- React Router
+- Axios
+- CSS
 
-## 🏃 How to Run
+### Backend
+- Node.js
+- Express.js
+- TypeScript
 
-### 1. Database
-```bash
-docker-compose up -d
-```
+### Database
+- PostgreSQL
 
-### 2. Backend
-```bash
-cd node_backend
-npm install
-npm run dev
-```
-
-### 3. Frontend
-```bash
-cd frontend
-npm install
-npm run dev
-```
+### Other Tools
+- Docker Compose
+- Git & GitHub
