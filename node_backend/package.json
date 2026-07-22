@@ -1,0 +1,33 @@
+{
+  "name": "custom-websites-node-backend",
+  "version": "1.0.0",
+  "description": "Express + TypeScript Backend for Custom Websites App",
+  "main": "dist/server.js",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsc && npm run migrate && node dist/server.js",
+    "build": "tsc",
+    "migrate": "node-pg-migrate up --config-file migrate.config.cjs",
+    "migrate:baseline": "node-pg-migrate up --config-file migrate.config.cjs --fake",
+    "migrate:down": "node-pg-migrate down --config-file migrate.config.cjs",
+    "migrate:create": "node-pg-migrate create --config-file migrate.config.cjs",
+    "start": "npm run migrate && node dist/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-pg-migrate": "^9.0.0",
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.0",
+    "@types/pg": "^8.11.6",
+    "typescript": "^5.3.3"
+  }
+}

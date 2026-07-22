@@ -1,0 +1,334 @@
+/* ==========================================================================
+   GLOBAL DESIGN TOKENS & RESET
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --font-heading: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-light: #dbeafe;
+
+  --accent: #14b8a6;
+  --accent-hover: #0d9488;
+  --accent-gold: #f59e0b;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+
+  --bg-main: #ffffff;
+  --bg-alt: #f8fafc;
+
+  --border-light: #e2e8f0;
+  --border-subtle: #f1f5f9;
+
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 10px 25px rgba(15, 23, 42, 0.1);
+  --shadow-hover: 0 12px 24px rgba(37, 99, 235, 0.15);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-main);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-normal);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Typography Helpers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Global Container Utility */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 600px) {
+  .section-container {
+    padding: 0 16px;
+  }
+}
+
+/* ==========================================================================
+   DARK THEME VARIABLES & OVERRIDES
+   ========================================================================== */
+
+body.dark-theme,
+[data-theme="dark"] {
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --primary-light: rgba(59, 130, 246, 0.2);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-light: #64748b;
+
+  --bg-main: #0f172a;
+  --bg-alt: #1e293b;
+
+  --border-light: #334155;
+  --border-subtle: #1e293b;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.6);
+  --shadow-hover: 0 12px 24px rgba(59, 130, 246, 0.25);
+}
+
+body.dark-theme {
+  background-color: #0f172a;
+  color: #cbd5e1;
+}
+
+body.dark-theme .navbar {
+  background: rgba(15, 23, 42, 0.95);
+  border-bottom-color: #334155;
+}
+
+body.dark-theme .logo span {
+  color: #60a5fa;
+}
+
+body.dark-theme .theme-toggle-btn {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+body.dark-theme .mobile-menu-btn {
+  color: #f8fafc;
+}
+
+body.dark-theme .mobile-menu-btn:hover {
+  background-color: #1e293b;
+}
+
+body.dark-theme .nav-menu {
+  background: #0f172a;
+  border-bottom-color: #334155;
+}
+
+body.dark-theme .nav-links a {
+  color: #cbd5e1;
+}
+
+body.dark-theme .nav-links a:hover,
+body.dark-theme .nav-links a.active {
+  color: #60a5fa;
+}
+
+body.dark-theme .nav-links a.active::after {
+  background: #60a5fa;
+}
+
+body.dark-theme .hero {
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+}
+
+body.dark-theme .hero h1 {
+  color: #f8fafc;
+}
+
+body.dark-theme .hero p {
+  color: #94a3b8;
+}
+
+body.dark-theme .hero-tag {
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+}
+
+body.dark-theme .hero-outline-btn {
+  border-color: #60a5fa;
+  color: #60a5fa;
+}
+
+body.dark-theme .hero-outline-btn:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+body.dark-theme .hero-points {
+  color: #cbd5e1;
+}
+
+body.dark-theme .services {
+  background: #0f172a;
+}
+
+body.dark-theme .services h2,
+body.dark-theme .templates-preview h2,
+body.dark-theme .pricing-preview h2,
+body.dark-theme .portfolio-preview h2,
+body.dark-theme .testimonials h2,
+body.dark-theme .templates-page h2,
+body.dark-theme .pricing-page h2,
+body.dark-theme .portfolio-page h1 {
+  color: #f8fafc;
+}
+
+body.dark-theme .services-subtitle,
+body.dark-theme .templates-subtitle,
+body.dark-theme .pricing-subtitle,
+body.dark-theme .portfolio-subtitle,
+body.dark-theme .testimonials-subtitle,
+body.dark-theme .portfolio-intro {
+  color: #94a3b8;
+}
+
+body.dark-theme .service-card,
+body.dark-theme .templates-preview .template-card,
+body.dark-theme .pricing-preview .pricing-card,
+body.dark-theme .portfolio-preview .portfolio-card,
+body.dark-theme .testimonial-card,
+body.dark-theme .templates-page .template-card,
+body.dark-theme .pricing-page .pricing-card,
+body.dark-theme .portfolio-project,
+body.dark-theme .website-form,
+body.dark-theme .booking-form {
+  background: #1e293b;
+  border-color: #334155;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .service-card h3,
+body.dark-theme .template-content h3,
+body.dark-theme .pricing-card h3,
+body.dark-theme .portfolio-content h3,
+body.dark-theme .portfolio-project h2,
+body.dark-theme .testimonial-card h4,
+body.dark-theme .website-form h2,
+body.dark-theme .booking-form h2 {
+  color: #f8fafc;
+}
+
+body.dark-theme .service-card p,
+body.dark-theme .template-content p,
+body.dark-theme .portfolio-content p,
+body.dark-theme .testimonial-text,
+body.dark-theme .pricing-card li,
+body.dark-theme .portfolio-list li {
+  color: #cbd5e1;
+}
+
+body.dark-theme .service-icon {
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+}
+
+body.dark-theme .templates-preview,
+body.dark-theme .portfolio-preview {
+  background: #0f172a;
+}
+
+body.dark-theme .pricing-preview,
+body.dark-theme .templates-page,
+body.dark-theme .pricing-page,
+body.dark-theme .portfolio-page {
+  background: #1e293b;
+}
+
+body.dark-theme .pricing-card h1 {
+  color: #60a5fa;
+}
+
+body.dark-theme .testimonials {
+  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+}
+
+body.dark-theme .testimonial-author {
+  border-top-color: #334155;
+}
+
+body.dark-theme .form-group input,
+body.dark-theme .form-group select,
+body.dark-theme .form-group textarea,
+body.dark-theme .booking-form input,
+body.dark-theme .booking-form select {
+  background-color: #0f172a;
+  color: #f8fafc;
+  border-color: #334155;
+}
+
+body.dark-theme .checkbox-grid label {
+  background-color: #0f172a;
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+body.dark-theme .checkbox-grid label:hover {
+  background-color: #1e293b;
+}
+
+body.dark-theme .form-group label,
+body.dark-theme .booking-form label {
+  color: #cbd5e1;
+}

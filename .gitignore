@@ -1,0 +1,21 @@
+# Top-Level Catch-All
+node_modules/
+dist/
+
+# Node & Frontend Dependencies & Builds
+frontend/node_modules/
+frontend/dist/
+node_backend/node_modules/
+node_backend/dist/
+
+# Environment & Secrets
+.env
+*.env
+.env.local
+
+# IDE & OS Files
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db

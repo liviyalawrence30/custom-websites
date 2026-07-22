@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Horizon Luxury Properties - Premier Real Estate & Architectural Living. Explore luxury villas, penthouse suites, and waterfront estates.">
+  <title>Horizon Luxury Properties | Exclusive Real Estate & Estates</title>
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. Simple Header Navigation -->
+  <header class="navbar-header" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-building-columns"></i></span>
+        <span class="logo-text">HORIZON <span>PROPERTIES</span></span>
+      </a>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#properties" class="nav-link">Listings</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#testimonials" class="nav-link">Clients</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. Simple 2-Column Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-badge"><i class="fa-solid fa-gem"></i> Exclusive Waterfront Living</span>
+          <h1 class="hero-title">Find Your Architectural Masterpiece</h1>
+          <p class="hero-subtitle">Discover premier luxury villas, private penthouse suites, and high-yield real estate investments across prime locations.</p>
+
+          <!-- Simple Search Bar Form -->
+          <form class="simple-search" onsubmit="event.preventDefault(); alert('Searching listings...');">
+            <select id="filter-location">
+              <option value="">Location</option>
+              <option value="beverly">Beverly Hills</option>
+              <option value="miami">Miami Beach</option>
+              <option value="manhattan">Manhattan</option>
+            </select>
+            <select id="filter-type">
+              <option value="">Type</option>
+              <option value="villa">Villa</option>
+              <option value="penthouse">Penthouse</option>
+            </select>
+            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Luxury Estate Villa">
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. About Section -->
+    <section class="about section-padding" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" alt="Luxury Interior Room" class="about-img">
+          </div>
+
+          <div class="about-content">
+            <span class="sub-title">About Horizon Properties</span>
+            <h2 class="section-title">Elevating Real Estate Beyond Extraordinary</h2>
+            <p class="about-desc">For nearly two decades, Horizon Real Estate Group has redefined luxury living by pairing ultra-exclusive architectural estates with white-glove advisory services.</p>
+
+            <div class="about-cards">
+              <div class="a-card">
+                <div class="a-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div>
+                  <h4>Private Discretion</h4>
+                  <p>Off-market access to high-profile estates with complete client privacy.</p>
+                </div>
+              </div>
+
+              <div class="a-card">
+                <div class="a-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div>
+                  <h4>High Yield Investments</h4>
+                  <p>In-depth portfolio analysis to maximize long-term equity returns.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Featured Listings / Properties Section -->
+    <section class="properties section-padding bg-alt" id="properties">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-title">Featured Portfolio</span>
+          <h2 class="section-title">Prime Estate Listings</h2>
+          <p class="section-desc">Handpicked architectural masterworks available for private viewing.</p>
+        </div>
+
+        <div class="property-filter text-center">
+          <button class="p-filter-btn active" data-filter="all">All Properties</button>
+          <button class="p-filter-btn" data-filter="villa">Villas</button>
+          <button class="p-filter-btn" data-filter="penthouse">Penthouses</button>
+          <button class="p-filter-btn" data-filter="waterfront">Waterfront</button>
+        </div>
+
+        <div class="property-grid">
+          <div class="property-card" data-category="villa">
+            <div class="property-thumb">
+              <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=700&q=80" alt="Bel Air Modern Mansion">
+              <span class="prop-badge">$12,500,000</span>
+              <span class="prop-type">Villa</span>
+            </div>
+            <div class="property-info">
+              <h3>The Bel Air Glass Residence</h3>
+              <p class="prop-loc"><i class="fa-solid fa-location-dot"></i> Bel Air Road, Los Angeles, CA</p>
+              <div class="prop-meta">
+                <span><i class="fa-solid fa-bed"></i> 6 Beds</span>
+                <span><i class="fa-solid fa-bath"></i> 8 Baths</span>
+              </div>
+              <a href="#contact" class="btn btn-outline btn-block">Contact Advisory</a>
+            </div>
+          </div>
+
+          <div class="property-card" data-category="penthouse">
+            <div class="property-thumb">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=700&q=80" alt="Manhattan Penthouse Suite">
+              <span class="prop-badge">$8,900,000</span>
+              <span class="prop-type">Penthouse</span>
+            </div>
+            <div class="property-info">
+              <h3>Park Avenue Horizon Penthouse</h3>
+              <p class="prop-loc"><i class="fa-solid fa-location-dot"></i> Park Avenue, Manhattan, NY</p>
+              <div class="prop-meta">
+                <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                <span><i class="fa-solid fa-bath"></i> 5 Baths</span>
+              </div>
+              <a href="#contact" class="btn btn-outline btn-block">Contact Advisory</a>
+            </div>
+          </div>
+
+          <div class="property-card" data-category="waterfront">
+            <div class="property-thumb">
+              <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=700&q=80" alt="Miami Waterfront Villa">
+              <span class="prop-badge">$15,200,000</span>
+              <span class="prop-type">Waterfront</span>
+            </div>
+            <div class="property-info">
+              <h3>Star Island Waterfront Estate</h3>
+              <p class="prop-loc"><i class="fa-solid fa-location-dot"></i> Star Island Drive, Miami, FL</p>
+              <div class="prop-meta">
+                <span><i class="fa-solid fa-bed"></i> 7 Beds</span>
+                <span><i class="fa-solid fa-bath"></i> 9 Baths</span>
+              </div>
+              <a href="#contact" class="btn btn-outline btn-block">Contact Advisory</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Services Section -->
+    <section class="services section-padding" id="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-title">Our Capabilities</span>
+          <h2 class="section-title">Real Estate Services & Technology</h2>
+          <p class="section-desc">Innovative digital walkthroughs, valuation estimators, and direct agent access.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="s-icon"><i class="fa-solid fa-filter"></i></div>
+            <h3>Property Search & Filter</h3>
+            <p>Custom search engine for luxury listings tailored by architectural style, amenities, and price metrics.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="s-icon"><i class="fa-solid fa-video"></i></div>
+            <h3>HD Virtual 3D Tours</h3>
+            <p>Immersive 4K drone cinematography and Matterport 3D walkthroughs from anywhere in the world.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="s-icon"><i class="fa-solid fa-user-tie"></i></div>
+            <h3>Agent Direct Advisory</h3>
+            <p>Direct priority line to senior brokers specialized in private off-market estate acquisitions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Client Testimonials Section -->
+    <section class="testimonials section-padding bg-alt" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-title">Endorsements</span>
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-desc">Feedback from homeowners, property investors, and international buyers.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="t-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="t-quote">"Horizon Properties made selling our Bel Air estate seamless. Their private marketing network brought us a qualified buyer within 12 days."</p>
+            <div class="t-author">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Arthur Vance">
+              <div>
+                <h4>Arthur Vance</h4>
+                <span>Tech Founder & Investor</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="t-quote">"The 3D virtual tour and financial yield projections gave me complete confidence to purchase our Miami waterfront property remotely."</p>
+            <div class="t-author">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Dr. Victoria Lin">
+              <div>
+                <h4>Dr. Victoria Lin</h4>
+                <span>Private Equity Director</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Direct Contact Section -->
+    <section class="contact section-padding" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-title">Connect With Us</span>
+          <h2 class="section-title">Direct Luxury Estate Advisory</h2>
+          <p class="section-desc">Reach out directly to our senior real estate specialists for private consultations and off-market viewing access.</p>
+        </div>
+
+        <div class="direct-contact-grid">
+          <div class="c-card">
+            <div class="c-card-icon"><i class="fa-solid fa-building"></i></div>
+            <h3>Headquarters</h3>
+            <p>9500 Wilshire Boulevard<br>Beverly Hills, CA 90212</p>
+          </div>
+
+          <div class="c-card">
+            <div class="c-card-icon"><i class="fa-solid fa-envelope"></i></div>
+            <h3>Direct Email</h3>
+            <p><a href="mailto:advisory@horizonproperties.com">advisory@horizonproperties.com</a></p>
+            <p class="sub-text">24/7 Concierge Support</p>
+          </div>
+
+          <div class="c-card">
+            <div class="c-card-icon"><i class="fa-solid fa-phone"></i></div>
+            <h3>Advisory Line</h3>
+            <p><a href="tel:+18008884674">+1 (800) 888-HORIZON</a></p>
+            <p class="sub-text">Mon–Sat Active</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Horizon Luxury Properties Group. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

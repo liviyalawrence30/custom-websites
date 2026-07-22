@@ -1,0 +1,31 @@
+# Render Blueprint: backend API + managed Postgres
+# Frontend: deploy separately on Vercel/Netlify and set VITE_API_URL to the API URL below.
+
+services:
+  - type: web
+    name: custom-websites-api
+    runtime: node
+    plan: free
+    rootDir: node_backend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: custom-websites-db
+          property: connectionString
+      - key: FRONTEND_URL
+        sync: false
+      - key: EMAIL_ADDRESS
+        sync: false
+      - key: EMAIL_PASSWORD
+        sync: false
+
+databases:
+  - name: custom-websites-db
+    plan: free
+    databaseName: custom_websites_db
+    user: custom_websites

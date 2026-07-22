@@ -1,0 +1,172 @@
+/* ==========================================================================
+   PRICING PREVIEW (HOME PAGE - COMPACT CARDS)
+   ========================================================================== */
+
+.pricing-preview {
+  padding: 60px 24px;
+  background: var(--bg-alt, #f8fafc);
+}
+
+.pricing-preview .pricing-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricing-preview h2 {
+  font-size: 2rem;
+  color: var(--text-primary, #0f172a);
+  margin-bottom: 8px;
+}
+
+.pricing-preview .pricing-subtitle {
+  color: var(--text-muted, #64748b);
+  max-width: 600px;
+  margin: 0 auto 32px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Compact Layout with Centered Cards */
+.pricing-preview .pricing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Compact Card */
+.pricing-preview .pricing-card {
+  flex: 1 1 260px;
+  max-width: 320px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 18px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.pricing-preview .pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.12);
+  border-color: rgba(37, 99, 235, 0.3);
+}
+
+/* Featured Badge */
+.pricing-preview .pricing-card.featured {
+  border: 2px solid #2563eb;
+  background: #ffffff;
+}
+
+.pricing-preview .pricing-card.featured::before {
+  content: "Most Popular";
+  display: inline-block;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin: 0 auto 12px;
+  width: fit-content;
+}
+
+/* Compact Card Typography */
+.pricing-preview .pricing-card h3 {
+  font-size: 1.15rem;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.pricing-preview .pricing-card h1 {
+  font-size: 1.75rem;
+  color: #2563eb;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.pricing-preview .pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 20px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.pricing-preview .pricing-card li {
+  padding: 4px 0;
+  font-size: 0.85rem;
+  color: #475569;
+  display: flex;
+  align-items: center;
+}
+
+.pricing-preview .pricing-card button,
+.pricing-preview .pricing-card .plan-btn {
+  display: inline-block;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  box-sizing: border-box;
+}
+
+.pricing-preview .pricing-card button:hover,
+.pricing-preview .pricing-card .plan-btn:hover {
+  background: #1d4ed8;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Action Button */
+.view-pricing-btn {
+  display: inline-block;
+  margin-top: 32px;
+  background: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+}
+
+.view-pricing-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+}
+
+@media (max-width: 768px) {
+  .pricing-preview {
+    padding: 45px 16px;
+  }
+
+  .pricing-preview h2 {
+    font-size: 1.75rem;
+  }
+
+  .pricing-preview .pricing-grid {
+    gap: 18px;
+  }
+
+  .pricing-preview .pricing-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

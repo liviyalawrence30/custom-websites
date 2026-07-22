@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gourmet Bistro & Dining - Fine Culinary Dining & Artisanal Cuisine. Experience chef recommendations, digital menu, and private table reservations.">
+  <title>Gourmet Bistro & Dining | Fine Culinary Experience</title>
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. Simple Navigation Bar -->
+  <header class="navbar-header" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-utensils"></i></span>
+        <span class="logo-text">GOURMET <span>BISTRO</span></span>
+      </a>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#menu" class="nav-link">Our Menu</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Reservations</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. Simple 2-Column Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-badge"><i class="fa-solid fa-star"></i> Michelin Recommended</span>
+          <h1 class="hero-title">Exquisite Taste & Artisanal Culinary Art</h1>
+          <p class="hero-subtitle">Indulge in hand-crafted French and Mediterranean fusion dishes, curated wines, and unforgettable fine dining atmospheres.</p>
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary">Explore Digital Menu</a>
+            <a href="#contact" class="btn btn-outline">Book A Table</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80" alt="Gourmet Bistro Dining Hall">
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. About Us Section -->
+    <section class="about section-padding" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80" alt="Gourmet Bistro Dining Room" class="about-img">
+          </div>
+
+          <div class="about-content">
+            <span class="sub-title">Our Heritage</span>
+            <h2 class="section-title">Passion For Fresh Ingredients & Timeless Flavors</h2>
+            <p class="about-desc">Established in 2011, Gourmet Bistro & Dining brings together organic farm-to-table produce, prime aged cuts, and hand-selected vintage wines crafted by Executive Chef Jean-Luc Dupont.</p>
+
+            <div class="about-highlights">
+              <div class="h-item">
+                <i class="fa-solid fa-seedling"></i>
+                <div>
+                  <h4>100% Organic Produce</h4>
+                  <p>Sourced daily from certified local sustainable farms.</p>
+                </div>
+              </div>
+
+              <div class="h-item">
+                <i class="fa-solid fa-wine-glass"></i>
+                <div>
+                  <h4>Sommelier Wine Cellar</h4>
+                  <p>Over 250 curated vintages from Bordeaux, Tuscany, and Napa.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Culinary Menu Section -->
+    <section class="menu section-padding bg-alt" id="menu">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-title">Chef's Selection</span>
+          <h2 class="section-title">Explore Our Digital Menu</h2>
+          <p class="section-desc">Handcrafted gourmet dishes prepared fresh for lunch and dinner.</p>
+        </div>
+
+        <div class="menu-filter text-center">
+          <button class="m-btn active" data-filter="all">All Dishes</button>
+          <button class="m-btn" data-filter="starters">Starters</button>
+          <button class="m-btn" data-filter="mains">Main Courses</button>
+          <button class="m-btn" data-filter="desserts">Desserts & Wine</button>
+        </div>
+
+        <div class="menu-grid">
+          <!-- Item 1 -->
+          <div class="menu-item" data-category="starters">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Truffle Mushroom Soup">
+            <div class="menu-details">
+              <div class="menu-head">
+                <h3>Wild Truffle Mushroom Velvet</h3>
+                <span class="menu-price">$18.50</span>
+              </div>
+              <p>Creamy wild chanterelle soup topped with truffle oil & parmesan crostini.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="menu-item" data-category="mains">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Prime Ribeye Steak">
+            <div class="menu-details">
+              <div class="menu-head">
+                <h3>Dry-Aged Angus Ribeye</h3>
+                <span class="menu-price">$48.00</span>
+              </div>
+              <p>45-day dry-aged 14oz ribeye served with roasted garlic herb butter & shallot jus.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="menu-item" data-category="mains">
+            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80" alt="Pan-Seared Salmon">
+            <div class="menu-details">
+              <div class="menu-head">
+                <h3>Pan-Seared Norwegian Salmon</h3>
+                <span class="menu-price">$36.00</span>
+              </div>
+              <p>Pan-seared salmon over asparagus risotto with lemon saffron emulsion.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="menu-item" data-category="desserts">
+            <img src="https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=600&q=80" alt="Chocolate Lava Cake">
+            <div class="menu-details">
+              <div class="menu-head">
+                <h3>Valrhona Chocolate Fondant</h3>
+                <span class="menu-price">$16.00</span>
+              </div>
+              <p>Warm molten dark chocolate cake paired with Madagascar vanilla bean gelato.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Testimonials Section -->
+    <section class="testimonials section-padding" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-title">Guest Reviews</span>
+          <h2 class="section-title">What Our Diners Say</h2>
+          <p class="section-desc">Read genuine reviews from food critics and valued guests.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="t-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="t-quote">"The ribeye steak and truffle soup were out of this world. Best dining experience in the city with impeccable service!"</p>
+            <div class="t-author">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Claire Vance">
+              <div>
+                <h4>Claire Vance</h4>
+                <span>Food Critic, Culinary Weekly</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="t-quote">"Celebrated our anniversary at Gourmet Bistro. The ambiance, wine pairings, and chocolate fondant made it unforgettable."</p>
+            <div class="t-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Robert Miller">
+              <div>
+                <h4>Robert Miller</h4>
+                <span>Verified Diner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Direct Table Reservations & Contact Section -->
+    <section class="contact section-padding bg-alt" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-title">Table Reservations</span>
+          <h2 class="section-title">Visit Gourmet Bistro & Dining</h2>
+          <p class="section-desc">Reserve your table directly by phone or visit our restaurant location.</p>
+        </div>
+
+        <div class="direct-contact-grid">
+          <div class="c-card">
+            <div class="c-card-icon"><i class="fa-solid fa-phone"></i></div>
+            <h3>Reservation Line</h3>
+            <p><a href="tel:+18005553463">+1 (800) 555-DINE</a></p>
+            <p class="sub-text">Mon–Sun: 10 AM – 10 PM</p>
+          </div>
+
+          <div class="c-card">
+            <div class="c-card-icon"><i class="fa-solid fa-envelope"></i></div>
+            <h3>Private Dining Email</h3>
+            <p><a href="mailto:reservations@gourmetbistro.com">reservations@gourmetbistro.com</a></p>
+            <p class="sub-text">Private Events & Catering</p>
+          </div>
+
+          <div class="c-card">
+            <div class="c-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <h3>Bistro Address</h3>
+            <p>450 Culinary Avenue, Suite 10<br>Downtown Fine Dining District</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Gourmet Bistro & Dining Ltd. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
