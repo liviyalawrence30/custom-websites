@@ -22,7 +22,8 @@ export const portfolio: PortfolioItem[] = [
     title: "Gourmet Bistro & Dining",
     client: "Gourmet Bistro Ltd.",
     shortDescription: "Restaurant & Culinary Business Site",
-    demoUrl: "",
+    demoUrl:
+      "https://liviyalawrence30.github.io/custom-websites/gourmet-bistro/",
     description:
       "A custom restaurant website designed for Gourmet Bistro. Features interactive digital menus, online table booking, chef recommendations, and customer review showcases.",
     idealFor: ["Restaurants", "Cafés", "Fine Dining", "Bakeries"],
@@ -32,11 +33,11 @@ export const portfolio: PortfolioItem[] = [
     id: 2,
     image: personalPortfolio,
     title: "Maria Liviya",
-    client: "Final year engineering student",
-    shortDescription: "Personal  Portfolio",
+    client: "Final Year Engineering Student",
+    shortDescription: "Personal Portfolio",
     demoUrl: "https://liviyalawrence30.github.io/dev-portfolio/",
     description:
-      "A modern developer portfolio website built to Showcases software projects, technical skills and  instant contact messaging.",
+      "A modern developer portfolio website showcasing software projects, technical skills, certifications, and an integrated contact section.",
     idealFor: ["Developers", "Students", "Consultants", "Freelancers"],
   },
 
@@ -46,7 +47,8 @@ export const portfolio: PortfolioItem[] = [
     title: "Aura Boutique & Apparel",
     client: "Aura Fashion Group",
     shortDescription: "E-Commerce Fashion Store",
-    demoUrl: "",
+    demoUrl:
+      "https://liviyalawrence30.github.io/custom-websites/aura-boutique/",
     description:
       "A modern e-commerce storefront crafted for Aura Boutique. Built with fast catalog loading, product filtering, shopping cart, customer wishlists, and checkout flow.",
     idealFor: ["Fashion Brands", "Boutiques", "E-Commerce Stores"],
@@ -58,9 +60,10 @@ export const portfolio: PortfolioItem[] = [
     title: "Horizon Luxury Properties",
     client: "Horizon Real Estate Group",
     shortDescription: "Real Estate & Property Listings Site",
-    demoUrl: "",
+    demoUrl:
+      "https://liviyalawrence30.github.io/custom-websites/horizon-realestate/",
     description:
-      "A luxury property platform created for Horizon Real Estate. Features interactive property search filters, virtual video tours, agent contact forms, and mortgage calculators.",
+      "A luxury property platform created for Horizon Real Estate. Features interactive property search filters, virtual property tours, agent contact forms, and mortgage calculators.",
     idealFor: ["Real Estate Agencies", "Property Managers", "Brokers"],
   },
 
@@ -70,9 +73,10 @@ export const portfolio: PortfolioItem[] = [
     title: "CloudFlow SaaS Platform",
     client: "CloudFlow Technologies",
     shortDescription: "SaaS Product & Tech Startup Website",
-    demoUrl: "",
+    demoUrl:
+      "https://liviyalawrence30.github.io/custom-websites/cloudflow-saas/",
     description:
-      "A high-converting SaaS product website designed for CloudFlow. Features dashboard preview cards, feature matrices, interactive pricing toggles, and live demo requests.",
+      "A high-converting SaaS product website designed for CloudFlow. Features dashboard previews, feature highlights, interactive pricing plans, and live demo requests.",
     idealFor: ["SaaS Companies", "Tech Startups", "Software Agencies"],
   },
 ];
